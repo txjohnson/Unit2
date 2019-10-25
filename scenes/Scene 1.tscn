@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://objects/BasicNoRight.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/Scene 1.gd" type="Script" id=2]
+
+[node name="Scene" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Stuff" parent="." index="1"]
+tile_data = PoolIntArray( 524296, 31, 0, 524297, 31, 0, 524298, 31, 0, 524299, 31, 0, 524300, 31, 0, 524301, 31, 0, 524302, 31, 0, 524303, 31, 0, 524304, 31, 0, 524305, 31, 0, 589832, 31, 0, 589841, 31, 0, 655368, 31, 0, 655377, 31, 0, 720904, 31, 0, 720913, 31, 0, 786440, 31, 0, 786444, 31, 0, 786445, 31, 0, 786446, 31, 0, 786447, 31, 0, 786448, 31, 0, 786449, 31, 0, 851976, 31, 0, 851980, 31, 0, 917512, 31, 0, 917513, 31, 0, 917514, 31, 0, 917515, 31, 0, 917516, 31, 0 )
