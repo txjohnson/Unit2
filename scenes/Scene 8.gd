@@ -1,6 +1,6 @@
 extends "res://objects/Basic.gd"
 
-# GOAL: Decompose patterns and create your own functions
+# GOAL: Decompose patterns and create your own loops and functions
 # Start by finding a small pattern of commands, then create a function that
 # calls them. Use that function to start solving parts of the puzzle.
 
@@ -12,6 +12,7 @@ extends "res://objects/Basic.gd"
 
 # INSTRUCTIONS (cont):
 # Here, call the function's you've created and solve the challenge.
+# Use loops to make the code shorter.
 func execute (userdata):
 	
 	
@@ -46,12 +47,15 @@ func execute (userdata):
 
 
 func _ready():
-	$Luigi.face_south()
-	put_luigi_at_cell  (16, 9)
-	put_switch_at_cell (16, 5)
-	put_switch_at_cell (16, 13)
-	put_switch_at_cell (12, 9)
-	put_switch_at_cell (20, 9)
-	put_switch_at_cell (8, 9)
-	put_switch_at_cell (24, 9)
-
+	$Luigi.face_east()
+	put_luigi_at_cell (4, 15)
+	put_coin_at_cell  (6, 9)
+	put_coin_at_cell  (6, 3)
+	put_coin_at_cell  (10, 9)
+	put_coin_at_cell  (10, 3)
+	put_coin_at_cell  (14, 9)
+	put_coin_at_cell  (14, 3)
+	put_coin_at_cell  (18, 9)
+	put_coin_at_cell  (18, 3)
+	put_coin_at_cell  (22, 9)
+	put_coin_at_cell  (22, 3)

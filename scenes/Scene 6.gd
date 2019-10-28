@@ -13,16 +13,8 @@ extends "res://objects/Basic.gd"
 # Run the code to see what collectCoinTurnAround() does.
 
 func collectCoinTurnAround ():
-	goForward()
-	goForward()
-	goForward()
-	jump()
-	turnLeft()
-	turnLeft()
-	goForward()
-	goForward()
-	goForward()
-	
+
+	pass	
 	
 # INSTRUCTIONS (cont):
 # Now write the body of solveRow so that it uses collectTurnAround()
