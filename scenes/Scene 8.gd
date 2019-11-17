@@ -13,7 +13,7 @@ extends "res://objects/Basic.gd"
 # INSTRUCTIONS (cont):
 # Here, call the function's you've created and solve the challenge.
 # Use loops to make the code shorter.
-func execute (userdata):
+func execute ():
 	
 	
 	pass
@@ -59,3 +59,9 @@ func _ready():
 	put_coin_at_cell  (18, 3)
 	put_coin_at_cell  (22, 9)
 	put_coin_at_cell  (22, 3)
+	proceed.post()
+	
+func main(userdata):
+	proceed.wait()
+	execute()
+

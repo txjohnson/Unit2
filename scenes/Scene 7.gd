@@ -12,7 +12,7 @@ extends "res://objects/Basic.gd"
 
 # INSTRUCTIONS (cont):
 # Here, call the function's you've created and solve the challenge.
-func execute (userdata):
+func execute ():
 	
 	
 	pass
@@ -54,4 +54,9 @@ func _ready():
 	put_switch_at_cell (20, 9)
 	put_switch_at_cell (8, 9)
 	put_switch_at_cell (24, 9)
+	proceed.post()
+
+func main(userdata):
+	proceed.wait()
+	execute()
 

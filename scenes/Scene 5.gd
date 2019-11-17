@@ -27,7 +27,7 @@ func solveArm ():
 # INSTRUCTIONS (cont):
 # Use solveArm() to help Luigi collect the coins from all of the 
 # arms of the cross.
-func execute (userdata):
+func execute ():
 
 	pass
 
@@ -62,4 +62,9 @@ func _ready():
 	put_coin_at_cell  (16, 5)
 	put_coin_at_cell  (19, 8)
 	put_coin_at_cell  (16, 11)
-	
+	proceed.post()
+
+func main(userdata):
+	proceed.wait()
+	execute()
+

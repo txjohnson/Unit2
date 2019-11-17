@@ -16,7 +16,7 @@ func collectAndToggle():
 
 # INSTRUCTIONS (cont):
 # Gather all coins and toggle all switches
-func execute (userdata):
+func execute ():
 	
 	pass
 
@@ -57,3 +57,9 @@ func _ready():
 	put_switch_at_cell (13, 10)
 #	put_switch_at_cell (14, 8)
 	put_switch_at_cell (12, 7)
+	proceed.post()
+
+func main(userdata):
+	proceed.wait()
+	execute()
+

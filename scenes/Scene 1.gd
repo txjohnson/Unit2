@@ -52,5 +52,8 @@ func _ready():
 	$Luigi.face_north()
 	put_luigi_at_cell(10,12)
 	put_flag_at_cell (15, 10)
-	pass # Replace with function body.
+	proceed.post()
 
+func main(userdata):
+	proceed.wait()
+	execute()

@@ -10,7 +10,7 @@ func  ():
 
 # INSTRUCTIONS (cont):
 # Use your function to help Luigi collect all of the coins.
-func execute (userdata):
+func execute ():
 
 	pass
 
@@ -49,4 +49,9 @@ func _ready():
 	put_coin_at_cell  (16, 7)
 	put_coin_at_cell  (16, 9)
 	put_coin_at_cell  (16, 11)
-	
+	proceed.post()
+
+func main(userdata):
+	proceed.wait()
+	execute()
+
