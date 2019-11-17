@@ -13,7 +13,7 @@ extends "res://objects/BasicNoRight.gd"
 # INSTRUCTIONS:
 # Use composition to move Luigi to the flag.
 
-func execute (userdata):
+func execute ():
 
 
 	pass
